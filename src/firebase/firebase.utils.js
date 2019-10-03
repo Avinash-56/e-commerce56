@@ -1,8 +1,6 @@
 import firebase from 'firebase/app'
 import  'firebase/firestore'
 import 'firebase/auth'
-import { async } from 'q'
-
 const config = {
     apiKey: "AIzaSyD6Gtzs-e5ng6gabY525ens2zjqHWzADcg",
     authDomain: "e-commerce56.firebaseapp.com",
@@ -54,3 +52,4 @@ provider.setCustomParameters({prompt:'select_account'})
 export const signInWithGoogle = () => auth.signInWithPopup(provider)
 
 export default firebase
+
